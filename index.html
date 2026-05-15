@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Roble - Inicio</title>
-    <!-- Google Fonts: Playfair Display (títulos) y Roboto (cuerpo) -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Tailwind CSS Play CDN -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -32,15 +34,13 @@
         }
     </script>
 </head>
+
 <body class="font-body bg-p-200 text-p-900">
 
     <!-- ==================== HEADER ==================== -->
     <header class="bg-p-900 px-6 py-4 md:px-12">
         <div class="flex items-center justify-center md:justify-between lg:justify-center gap-5 max-w-7xl mx-auto">
-            <!-- Logo: oculto en móvil, visible en tablet y desktop -->
-            <img src="img/logo.png" alt="Logo Casa Roble"
-                 class="hidden md:block h-16 w-16 rounded-md">
-            <!-- Nombre de la empresa -->
+            <img src="img/logo.png" alt="Logo Casa Roble" class="hidden md:block h-16 w-16 rounded-md">
             <h1 class="text-white font-titles text-2xl md:text-3xl lg:text-4xl py-3 px-8 rounded-lg">
                 Casa Roble
             </h1>
@@ -50,40 +50,32 @@
     <!-- ==================== NAVEGACIÓN ==================== -->
     <nav class="bg-p-400 px-6 py-4 md:px-12">
         <div class="max-w-7xl mx-auto">
-            <!-- Botón hamburguesa: visible en móvil y tablet, oculto en desktop -->
             <button id="hamburger-btn" class="text-white text-3xl cursor-pointer lg:hidden mb-2">
                 ☰
             </button>
 
-            <!-- Contenedor de navegación -->
             <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3">
-                <!-- Buscador funcional (formulario con input) — Lado izquierdo en desktop -->
                 <form class="order-2 lg:order-1 w-full lg:w-auto">
-                    <input type="search" placeholder="Buscar..."
-                           class="bg-p-600 text-white placeholder-white/70 px-6 py-2.5 rounded-full
+                    <input type="search" placeholder="Buscar..." class="bg-p-600 text-white placeholder-white/70 px-6 py-2.5 rounded-full
                                   text-sm font-bold w-full lg:w-48 outline-none
                                   focus:ring-2 focus:ring-white/50">
                 </form>
 
-                <!-- Lista de enlaces (ul) — Lado derecho en desktop -->
                 <ul id="nav-links" class="hidden lg:flex flex-col lg:flex-row gap-3 order-1 lg:order-2 list-none">
                     <li>
-                        <a href="index.html"
-                           class="block bg-p-700 text-white px-6 py-2.5 rounded-xl text-sm font-bold
+                        <a href="index.html" class="block bg-p-700 text-white px-6 py-2.5 rounded-xl text-sm font-bold
                                   text-center hover:bg-p-600 transition-colors">
                             Inicio
                         </a>
                     </li>
                     <li>
-                        <a href="tienda.html"
-                           class="block bg-p-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold
+                        <a href="tienda.html" class="block bg-p-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold
                                   text-center hover:bg-p-700 transition-colors">
                             Tienda Online
                         </a>
                     </li>
                     <li>
-                        <a href="#"
-                           class="block bg-p-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold
+                        <a href="#" class="block bg-p-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold
                                   text-center hover:bg-p-700 transition-colors">
                             Registro
                         </a>
@@ -93,84 +85,94 @@
         </div>
     </nav>
 
-    <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+    <!-- ==================== MAIN ==================== -->
     <main class="max-w-7xl mx-auto px-4 py-8 md:px-6 lg:px-8">
 
-        <!-- ===== SECCIÓN 1: HERO / PRESENTACIÓN ===== -->
         <section class="mb-10">
             <h2 class="font-titles text-3xl md:text-4xl mb-6">Tu librería</h2>
             <div class="bg-wine border-4 border-p-900 rounded-2xl p-3 md:p-4">
-                <div class="bg-n-100 rounded-lg p-6 md:p-10 flex flex-col md:flex-row gap-6 md:gap-10 relative overflow-hidden">
-                    <!-- Imagen hero -->
+                <div
+                    class="bg-n-100 rounded-lg p-6 md:p-10 flex flex-col md:flex-row gap-6 md:gap-10 relative overflow-hidden">
                     <img src="img/harry-potter-books.jpg" alt="Colección Harry Potter"
-                         class="w-full md:w-72 lg:w-80 rounded shadow-[12px_12px_0px_#4c2e1b]">
-                    <!-- Texto descriptivo -->
+                        class="w-full md:w-72 lg:w-80 rounded shadow-[12px_12px_0px_#4c2e1b]">
                     <div class="flex-1">
                         <h3 class="text-xl md:text-2xl font-bold mb-4">Un mundo de aventuras para jóvenes lectores</h3>
-                        <p class="mb-3 leading-relaxed text-sm md:text-base">En Casa Roble creemos que la lectura es una puerta abierta a mundos mágicos, emocionantes y llenos de posibilidades. Nuestra librería está dedicada a los jóvenes lectores que disfrutan de descubrir aventuras.</p>
-                        <p class="mb-3 leading-relaxed text-sm md:text-base">Seleccionamos cuidadosamente cada título para ofrecer historias que inspiren, acompañen y motiven a crecer.</p>
-                        <p class="leading-relaxed text-sm md:text-base">Queremos ser un lugar donde cada joven encuentre un libro que le hable, que lo haga soñar y que encienda esa chispa interna.</p>
+                        <p class="mb-3 leading-relaxed text-sm md:text-base">En Casa Roble creemos que la lectura es una
+                            puerta abierta a mundos mágicos, emocionantes y llenos de posibilidades. Nuestra librería
+                            está dedicada a los jóvenes lectores que disfrutan de descubrir aventuras.</p>
+                        <p class="mb-3 leading-relaxed text-sm md:text-base">Seleccionamos cuidadosamente cada título
+                            para ofrecer historias que inspiren, acompañen y motiven a crecer.</p>
+                        <p class="leading-relaxed text-sm md:text-base">Queremos ser un lugar donde cada joven encuentre
+                            un libro que le hable, que lo haga soñar y que encienda esa chispa interna.</p>
                     </div>
-                    <!-- Lomo decorativo del libro -->
                     <div class="hidden md:block absolute right-5 top-5 bottom-5 w-3 bg-p-900 rounded-full"></div>
                 </div>
             </div>
         </section>
 
-        <!-- ===== SECCIÓN 2: NOVEDADES / LIBROS Y ARTÍCULOS ===== -->
         <section class="mb-10">
             <h2 class="font-titles text-3xl md:text-4xl mb-6">Libros y artículos</h2>
             <div class="bg-n-100 rounded-2xl p-6 md:p-10">
                 <h3 class="text-xl font-bold mb-2">¿Qué vendemos?</h3>
-                <p class="mb-6 text-sm md:text-base">En Casa Roble encontrarás una selección especial de libros juveniles, desde sagas de fantasía hasta historias contemporáneas que conectan con los lectores más jóvenes.</p>
+                <p class="mb-6 text-sm md:text-base">En Casa Roble encontrarás una selección especial de libros
+                    juveniles, desde sagas de fantasía hasta historias contemporáneas que conectan con los lectores más
+                    jóvenes.
+                </p>
 
-                <!-- Grid de tarjetas: 1 col móvil → 2 col tablet → 4 col desktop -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 justify-items-center">
-                    <!-- Tarjeta 1 -->
-                    <article class="bg-n-600 rounded-2xl overflow-hidden flex flex-col text-white text-center shadow-md w-full max-w-[240px]">
+                    <article
+                        class="bg-n-600 rounded-2xl overflow-hidden flex flex-col text-white text-center shadow-md w-full max-w-[240px]">
                         <div class="h-72 flex items-center justify-center p-4">
-                            <img src="img/fuego-azul.jpg" alt="Imperio de fuego azul" class="max-h-[95%] max-w-[95%] object-contain drop-shadow-lg">
+                            <img src="img/fuego-azul.jpg" alt="Imperio de fuego azul"
+                                class="max-h-[95%] max-w-[95%] object-contain drop-shadow-lg">
                         </div>
-                        <div class="px-4 py-5 font-bold text-base flex-grow flex items-center justify-center">Imperio de fuego azul</div>
+                        <div class="px-4 py-5 font-bold text-base flex-grow flex items-center justify-center">Imperio de
+                            fuego azul</div>
                         <div class="bg-s-400 py-3 font-bold text-lg">22,59 €</div>
                     </article>
-                    <!-- Tarjeta 2 -->
-                    <article class="bg-n-600 rounded-2xl overflow-hidden flex flex-col text-white text-center shadow-md w-full max-w-[240px]">
+
+                    <article
+                        class="bg-n-600 rounded-2xl overflow-hidden flex flex-col text-white text-center shadow-md w-full max-w-[240px]">
                         <div class="h-72 flex items-center justify-center p-4">
-                            <img src="img/amigo-imaginario.jpg" alt="Amigo imaginario" class="max-h-[95%] max-w-[95%] object-contain drop-shadow-lg">
+                            <img src="img/amigo-imaginario.jpg" alt="Amigo imaginario"
+                                class="max-h-[95%] max-w-[95%] object-contain drop-shadow-lg">
                         </div>
-                        <div class="px-4 py-5 font-bold text-base flex-grow flex items-center justify-center">Amigo imaginario</div>
+                        <div class="px-4 py-5 font-bold text-base flex-grow flex items-center justify-center">Amigo
+                            imaginario</div>
                         <div class="bg-s-400 py-3 font-bold text-lg">14,96 €</div>
                     </article>
-                    <!-- Tarjeta 3 -->
-                    <article class="bg-n-600 rounded-2xl overflow-hidden flex flex-col text-white text-center shadow-md w-full max-w-[240px]">
+
+                    <article
+                        class="bg-n-600 rounded-2xl overflow-hidden flex flex-col text-white text-center shadow-md w-full max-w-[240px]">
                         <div class="h-72 flex items-center justify-center p-4">
-                            <img src="img/taza-hp.jpg" alt="Taza Harry Potter" class="max-h-[95%] max-w-[95%] object-contain drop-shadow-lg">
+                            <img src="img/taza-hp.jpg" alt="Taza Harry Potter"
+                                class="max-h-[95%] max-w-[95%] object-contain drop-shadow-lg">
                         </div>
-                        <div class="px-4 py-5 font-bold text-base flex-grow flex items-center justify-center">Taza Harry Potter</div>
+                        <div class="px-4 py-5 font-bold text-base flex-grow flex items-center justify-center">Taza Harry
+                            Potter</div>
                         <div class="bg-s-400 py-3 font-bold text-lg">9,99 €</div>
                     </article>
-                    <!-- Tarjeta 4 -->
-                    <article class="bg-n-600 rounded-2xl overflow-hidden flex flex-col text-white text-center shadow-md w-full max-w-[240px]">
+
+                    <article
+                        class="bg-n-600 rounded-2xl overflow-hidden flex flex-col text-white text-center shadow-md w-full max-w-[240px]">
                         <div class="h-72 flex items-center justify-center p-4">
-                            <img src="img/bolsa-gato.jpg" alt="Bolsa de tela gato" class="max-h-[95%] max-w-[95%] object-contain drop-shadow-lg">
+                            <img src="img/bolsa-gato.jpg" alt="Bolsa de tela gato"
+                                class="max-h-[95%] max-w-[95%] object-contain drop-shadow-lg">
                         </div>
-                        <div class="px-4 py-5 font-bold text-base flex-grow flex items-center justify-center">Bolsa de tela gato</div>
+                        <div class="px-4 py-5 font-bold text-base flex-grow flex items-center justify-center">Bolsa de
+                            tela gato</div>
                         <div class="bg-s-400 py-3 font-bold text-lg">10,27 €</div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- ===== SECCIÓN 3: BUSCADOR DE TIENDAS ===== -->
         <section class="mb-10">
             <h2 class="font-titles text-3xl md:text-4xl mb-6">Buscador de Tiendas</h2>
             <div class="bg-n-100 rounded-2xl p-6 md:p-10 flex flex-col lg:flex-row gap-8 lg:gap-12">
-                <!-- Mapa -->
                 <div class="w-full lg:w-[694px] h-64 md:h-80 lg:h-[430px] flex-shrink-0">
                     <img src="img/mapa.jpg" alt="Mapa de tiendas" class="w-full h-full object-cover rounded-2xl">
                 </div>
-                <!-- Info tiendas -->
                 <div class="flex-1">
                     <h4 class="text-p-900 font-bold text-xl md:text-2xl mb-5">Tu tienda más cercana</h4>
                     <ul class="list-disc ml-5 mb-8 space-y-2">
@@ -192,9 +194,8 @@
 
     <!-- ==================== FOOTER ==================== -->
     <footer class="px-6 py-10 md:px-12 border-t border-p-900">
-        <!-- Tres columnas: enlaces / copyright / redes sociales -->
+
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left max-w-7xl mx-auto">
-            <!-- Columna 1: Enlaces de interés -->
             <div>
                 <h4 class="font-bold text-p-900 mb-4">Casa Roble</h4>
                 <p class="text-sm text-[#4a6c6d] mb-2 cursor-pointer hover:underline">Quienes Somos</p>
@@ -205,34 +206,39 @@
                 <p class="text-sm text-[#4a6c6d] mb-2 cursor-pointer hover:underline">Casa Roble Colombia</p>
                 <p class="text-sm text-[#4a6c6d] cursor-pointer hover:underline">Casa Roble Argentina</p>
             </div>
-            <!-- Columna 2: Copyright -->
             <div class="flex flex-col items-center justify-center">
                 <h4 class="font-bold text-p-900 mb-4">Servicios</h4>
                 <p class="text-sm text-[#4a6c6d] mb-2 cursor-pointer hover:underline">Casa Roble Plus</p>
                 <p class="text-sm text-[#4a6c6d] mb-2 cursor-pointer hover:underline">Vende con nosotros</p>
-                <p class="text-sm text-[#4a6c6d] mb-2 cursor-pointer hover:underline">Venta a Empresas e Instituciones</p>
+                <p class="text-sm text-[#4a6c6d] mb-2 cursor-pointer hover:underline">Venta a Empresas e Instituciones
+                </p>
                 <p class="text-sm text-[#4a6c6d] mb-2 cursor-pointer hover:underline">Preventa</p>
                 <p class="text-sm text-[#4a6c6d] mb-2 cursor-pointer hover:underline">Información para editoriales</p>
                 <p class="text-sm text-[#4a6c6d] mb-2 cursor-pointer hover:underline">Libros al por mayor</p>
                 <p class="text-sm text-[#4a6c6d] cursor-pointer hover:underline">Programa afiliados</p>
             </div>
-            <!-- Columna 3: Redes sociales -->
             <div>
                 <h4 class="font-bold text-p-900 mb-4">Síguenos</h4>
                 <div class="flex gap-3 justify-center md:justify-start flex-wrap">
-                    <img src="img/fb.png" alt="Facebook" class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
-                    <img src="img/x.png" alt="X" class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
-                    <img src="img/ig.png" alt="Instagram" class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
-                    <img src="img/pt.png" alt="Pinterest" class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
-                    <img src="img/sp.png" alt="Spotify" class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
-                    <img src="img/yt.png" alt="YouTube" class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
+                    <img src="img/fb.png" alt="Facebook"
+                        class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
+                    <img src="img/x.png" alt="X"
+                        class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
+                    <img src="img/ig.png" alt="Instagram"
+                        class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
+                    <img src="img/pt.png" alt="Pinterest"
+                        class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
+                    <img src="img/sp.png" alt="Spotify"
+                        class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
+                    <img src="img/yt.png" alt="YouTube"
+                        class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
                 </div>
             </div>
         </div>
-        <!-- Copyright general -->
         <p class="text-center mt-12 text-xs">Casa Roble. Todos los derechos reservados.</p>
     </footer>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

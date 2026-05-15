@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Roble - Tienda Online</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -30,6 +33,7 @@
         }
     </script>
 </head>
+
 <body class="font-body bg-p-200 text-p-900">
 
     <!-- ==================== HEADER ==================== -->
@@ -45,224 +49,300 @@
         <div class="max-w-7xl mx-auto">
             <button id="hamburger-btn" class="text-white text-3xl cursor-pointer lg:hidden mb-2">☰</button>
             <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3">
-                <!-- Buscador — Lado izquierdo en desktop -->
                 <form class="order-2 lg:order-1 w-full lg:w-auto">
-                    <input type="search" placeholder="Buscar..." class="bg-p-600 text-white placeholder-white/70 px-6 py-2.5 rounded-full text-sm font-bold w-full lg:w-48 outline-none focus:ring-2 focus:ring-white/50">
+                    <input type="search" placeholder="Buscar..."
+                        class="bg-p-600 text-white placeholder-white/70 px-6 py-2.5 rounded-full text-sm font-bold w-full lg:w-48 outline-none focus:ring-2 focus:ring-white/50">
                 </form>
-                <!-- Enlaces (ul) — Lado derecho en desktop -->
                 <ul id="nav-links" class="hidden lg:flex flex-col lg:flex-row gap-3 order-1 lg:order-2 list-none">
-                    <li><a href="index.html" class="block bg-p-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold text-center hover:bg-p-700 transition-colors">Inicio</a></li>
-                    <li><a href="tienda.html" class="block bg-p-700 text-white px-6 py-2.5 rounded-xl text-sm font-bold text-center hover:bg-p-600 transition-colors">Tienda Online</a></li>
-                    <li><a href="#" class="block bg-p-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold text-center hover:bg-p-700 transition-colors">Registro</a></li>
+                    <li><a href="index.html"
+                            class="block bg-p-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold text-center hover:bg-p-700 transition-colors">Inicio</a>
+                    </li>
+                    <li><a href="tienda.html"
+                            class="block bg-p-700 text-white px-6 py-2.5 rounded-xl text-sm font-bold text-center hover:bg-p-600 transition-colors">Tienda
+                            Online</a></li>
+                    <li><a href="#"
+                            class="block bg-p-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold text-center hover:bg-p-700 transition-colors">Registro</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
-    <!-- Layout: en móvil apilado, en desktop sidebar 25% + grid 75% -->
+    <!-- ==================== MAIN ==================== -->
     <main class="flex flex-col lg:flex-row lg:items-start mt-0">
 
-        <!-- ===== SIDEBAR DE CATEGORÍAS (aside) ===== -->
         <aside class="w-full lg:w-1/4 bg-p-900 text-white p-6 lg:p-10 lg:min-h-screen">
             <h2 class="font-titles text-2xl lg:text-3xl mb-6">Filtrar por</h2>
             <div class="space-y-3 text-sm">
-                <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400"> Todos los productos</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400"> Todos los
+                    productos</label>
                 <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400"> Tazas</label>
                 <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400"> Bolsas</label>
-                <!-- Subcategorías de Libros -->
                 <div>
-                    <label class="flex items-center gap-2"><input type="checkbox" checked class="accent-s-400"> Libros</label>
+                    <label class="flex items-center gap-2"><input type="checkbox" checked class="accent-s-400">
+                        Libros</label>
                     <div class="ml-6 mt-2 space-y-2">
-                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400"> Fantasía</label>
-                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400"> Misterio</label>
-                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400"> Terror</label>
-                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400"> Thriller</label>
-                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400"> Aventura</label>
-                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400"> Drama</label>
+                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400">
+                            Fantasía</label>
+                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400">
+                            Misterio</label>
+                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400">
+                            Terror</label>
+                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400">
+                            Thriller</label>
+                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400">
+                            Aventura</label>
+                        <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400">
+                            Drama</label>
                     </div>
                 </div>
-                <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400"> Merchandising</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400">
+                    Merchandising</label>
                 <label class="flex items-center gap-2"><input type="checkbox" class="accent-s-400"> Otros</label>
             </div>
         </aside>
 
-        <!-- ===== REJILLA DE PRODUCTOS ===== -->
+        <!-- ===== PRODUCTOS ===== -->
         <section class="flex-1 p-4 md:p-6 lg:p-8">
-            <!-- Grid: 1 col móvil → 2 col tablet → 4 col desktop -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 justify-items-center">
 
-                <!-- Tarjeta 1 -->
-                <article class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
+                <article
+                    class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
                     <div class="bg-n-600 h-48 flex items-center justify-center p-2">
-                        <img src="img/libro-mariposa.jpg" alt="El aleteo de la mariposa" class="h-full w-full object-contain drop-shadow-md">
+                        <img src="img/libro-mariposa.jpg" alt="El aleteo de la mariposa"
+                            class="h-full w-full object-contain drop-shadow-md">
                     </div>
                     <div class="p-4 flex-grow flex flex-col justify-between">
                         <h3 class="font-bold text-sm mb-1">El aleteo de la mariposa</h3>
-                        <p class="text-xs opacity-90 mb-3 leading-snug">Un thriller inquietante que juega con la teoría del caos...</p>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir al carrito</button>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
+                        <p class="text-xs opacity-90 mb-3 leading-snug">Un thriller inquietante que juega con la teoría
+                            del caos...</p>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir
+                            al carrito</button>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
                     </div>
                     <div class="bg-s-400 py-3 text-center font-bold text-lg">16,50€</div>
                 </article>
 
-                <!-- Tarjeta 2 -->
-                <article class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
+                <article
+                    class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
                     <div class="bg-n-600 h-48 flex items-center justify-center p-2">
-                        <img src="img/un-cuento-perfecto.jpg" alt="Un cuento perfecto" class="h-full w-full object-contain drop-shadow-md">
+                        <img src="img/un-cuento-perfecto.jpg" alt="Un cuento perfecto"
+                            class="h-full w-full object-contain drop-shadow-md">
                     </div>
                     <div class="p-4 flex-grow flex flex-col justify-between">
                         <h3 class="font-bold text-sm mb-1">Un cuento perfecto</h3>
-                        <p class="text-xs opacity-90 mb-3 leading-snug">Una novela romántica profunda y emotiva que va más...</p>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir al carrito</button>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
+                        <p class="text-xs opacity-90 mb-3 leading-snug">Una novela romántica profunda y emotiva que va
+                            más...</p>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir
+                            al carrito</button>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
                     </div>
                     <div class="bg-s-400 py-3 text-center font-bold text-lg">15,58€</div>
                 </article>
 
-                <!-- Tarjeta 3 — Oferta -->
-                <article class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
-                    <span class="absolute top-2 left-2 bg-red-700 text-white text-xs px-3 py-1 rounded-full z-10">Oferta</span>
+                <article
+                    class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
+                    <span
+                        class="absolute top-2 left-2 bg-red-700 text-white text-xs px-3 py-1 rounded-full z-10">Oferta</span>
                     <div class="bg-n-600 h-48 flex items-center justify-center p-2">
-                        <img src="img/invisible.jpg" alt="Invisible" class="h-full w-full object-contain drop-shadow-md">
+                        <img src="img/invisible.jpg" alt="Invisible"
+                            class="h-full w-full object-contain drop-shadow-md">
                     </div>
                     <div class="p-4 flex-grow flex flex-col justify-between">
                         <h3 class="font-bold text-sm mb-1">Invisible</h3>
-                        <p class="text-xs opacity-90 mb-3 leading-snug">Una novela juvenil y social profundamente emotiva sobre acoso escolar</p>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir al carrito</button>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
+                        <p class="text-xs opacity-90 mb-3 leading-snug">Una novela juvenil y social profundamente
+                            emotiva sobre acoso escolar</p>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir
+                            al carrito</button>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
                     </div>
                     <div class="bg-s-400 py-3 text-center font-bold text-lg">14,00€</div>
                 </article>
 
-                <!-- Tarjeta 4 — Nuevo -->
-                <article class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
-                    <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-3 py-1 rounded-full z-10">Nuevo</span>
+                <article
+                    class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
+                    <span
+                        class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-3 py-1 rounded-full z-10">Nuevo</span>
                     <div class="bg-n-600 h-48 flex items-center justify-center p-2">
-                        <img src="img/desconocidos.jpg" alt="Desconocidos" class="h-full w-full object-contain drop-shadow-md">
+                        <img src="img/desconocidos.jpg" alt="Desconocidos"
+                            class="h-full w-full object-contain drop-shadow-md">
                     </div>
                     <div class="p-4 flex-grow flex flex-col justify-between">
                         <h3 class="font-bold text-sm mb-1">Desconocidos</h3>
-                        <p class="text-xs opacity-90 mb-3 leading-snug">Un thriller juvenil lleno de intriga, misterio y un fuerte contenido social</p>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir al carrito</button>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
+                        <p class="text-xs opacity-90 mb-3 leading-snug">Un thriller juvenil lleno de intriga, misterio y
+                            un fuerte contenido social</p>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir
+                            al carrito</button>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
                     </div>
                     <div class="bg-s-400 py-3 text-center font-bold text-lg">16,60€</div>
                 </article>
 
-                <!-- Tarjeta 5 -->
-                <article class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
+                <article
+                    class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
                     <div class="bg-n-600 h-48 flex items-center justify-center p-2">
-                        <img src="img/taza-batman.jpg" alt="Taza de Batman" class="h-full w-full object-contain drop-shadow-md">
+                        <img src="img/taza-batman.jpg" alt="Taza de Batman"
+                            class="h-full w-full object-contain drop-shadow-md">
                     </div>
                     <div class="p-4 flex-grow flex flex-col justify-between">
                         <h3 class="font-bold text-sm mb-1">Taza de Batman</h3>
-                        <p class="text-xs opacity-90 mb-3 leading-snug">Taza oficial de cerámica resistente al microondas.</p>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir al carrito</button>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
+                        <p class="text-xs opacity-90 mb-3 leading-snug">Taza oficial de cerámica resistente al
+                            microondas.</p>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir
+                            al carrito</button>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
                     </div>
                     <div class="bg-s-400 py-3 text-center font-bold text-lg">8,59€</div>
                 </article>
 
-                <!-- Tarjeta 6 — Nuevo -->
-                <article class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
-                    <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-3 py-1 rounded-full z-10">Nuevo</span>
+                <article
+                    class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
+                    <span
+                        class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-3 py-1 rounded-full z-10">Nuevo</span>
                     <div class="bg-n-600 h-48 flex items-center justify-center p-2">
-                        <img src="img/bolsa-hogwarts.jpg" alt="Bolsa de tela Hogwarts" class="h-full w-full object-contain drop-shadow-md">
+                        <img src="img/bolsa-hogwarts.jpg" alt="Bolsa de tela Hogwarts"
+                            class="h-full w-full object-contain drop-shadow-md">
                     </div>
                     <div class="p-4 flex-grow flex flex-col justify-between">
                         <h3 class="font-bold text-sm mb-1">Bolsa de tela Hogwarts</h3>
-                        <p class="text-xs opacity-90 mb-3 leading-snug">Lleva tu magia a todas partes con esta bolsa ecológica.</p>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir al carrito</button>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
+                        <p class="text-xs opacity-90 mb-3 leading-snug">Lleva tu magia a todas partes con esta bolsa
+                            ecológica.</p>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir
+                            al carrito</button>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
                     </div>
                     <div class="bg-s-400 py-3 text-center font-bold text-lg">12,99€</div>
                 </article>
 
-                <!-- Tarjeta 7 -->
-                <article class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
+                <article
+                    class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
                     <div class="bg-n-600 h-48 flex items-center justify-center p-2">
-                        <img src="img/pegatinas-pokemon.jpg" alt="Pegatinas Pokémon" class="h-full w-full object-contain drop-shadow-md">
+                        <img src="img/pegatinas-pokemon.jpg" alt="Pegatinas Pokémon"
+                            class="h-full w-full object-contain drop-shadow-md">
                     </div>
                     <div class="p-4 flex-grow flex flex-col justify-between">
                         <h3 class="font-bold text-sm mb-1">Pegatinas Pokémon</h3>
-                        <p class="text-xs opacity-90 mb-3 leading-snug">Set de pegatinas de alta calidad de tus Pokémon favoritos.</p>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir al carrito</button>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
+                        <p class="text-xs opacity-90 mb-3 leading-snug">Set de pegatinas de alta calidad de tus Pokémon
+                            favoritos.</p>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir
+                            al carrito</button>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
                     </div>
                     <div class="bg-s-400 py-3 text-center font-bold text-lg">5,67€</div>
                 </article>
 
-                <!-- Tarjeta 8 — Oferta -->
-                <article class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
-                    <span class="absolute top-2 left-2 bg-red-700 text-white text-xs px-3 py-1 rounded-full z-10">Oferta</span>
+                <article
+                    class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
+                    <span
+                        class="absolute top-2 left-2 bg-red-700 text-white text-xs px-3 py-1 rounded-full z-10">Oferta</span>
                     <div class="bg-n-600 h-48 flex items-center justify-center p-2">
-                        <img src="img/poster-gravity.jpg" alt="Poster Gravity Falls" class="h-full w-full object-contain drop-shadow-md">
+                        <img src="img/poster-gravity.jpg" alt="Poster Gravity Falls"
+                            class="h-full w-full object-contain drop-shadow-md">
                     </div>
                     <div class="p-4 flex-grow flex flex-col justify-between">
                         <h3 class="font-bold text-sm mb-1">Poster Gravity Falls</h3>
                         <p class="text-xs opacity-90 mb-3 leading-snug">Poster brillante de alta definición (A3).</p>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir al carrito</button>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir
+                            al carrito</button>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
                     </div>
                     <div class="bg-s-400 py-3 text-center font-bold text-lg">6,32€</div>
                 </article>
 
-                <!-- Tarjeta 9 -->
-                <article class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
+                <article
+                    class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
                     <div class="bg-n-600 h-48 flex items-center justify-center p-2">
-                        <img src="img/azkaban.jpg" alt="El prisionero de Azkaban" class="h-full w-full object-contain drop-shadow-md">
+                        <img src="img/azkaban.jpg" alt="El prisionero de Azkaban"
+                            class="h-full w-full object-contain drop-shadow-md">
                     </div>
                     <div class="p-4 flex-grow flex flex-col justify-between">
                         <h3 class="font-bold text-sm mb-1">El prisionero de Azkaban</h3>
-                        <p class="text-xs opacity-90 mb-3 leading-snug">La tercera entrega de la saga, una aventura llena de magia y misterio</p>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir al carrito</button>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
+                        <p class="text-xs opacity-90 mb-3 leading-snug">La tercera entrega de la saga, una aventura
+                            llena de magia y misterio</p>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir
+                            al carrito</button>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
                     </div>
                     <div class="bg-s-400 py-3 text-center font-bold text-lg">18,89€</div>
                 </article>
 
-                <!-- Tarjeta 10 — Nuevo -->
-                <article class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
-                    <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-3 py-1 rounded-full z-10">Nuevo</span>
+                <article
+                    class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
+                    <span
+                        class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-3 py-1 rounded-full z-10">Nuevo</span>
                     <div class="bg-n-600 h-48 flex items-center justify-center p-2">
-                        <img src="img/hxh.jpg" alt="Hunter x Hunter" class="h-full w-full object-contain drop-shadow-md">
+                        <img src="img/hxh.jpg" alt="Hunter x Hunter"
+                            class="h-full w-full object-contain drop-shadow-md">
                     </div>
                     <div class="p-4 flex-grow flex flex-col justify-between">
                         <h3 class="font-bold text-sm mb-1">Hunter x Hunter vol.21</h3>
-                        <p class="text-xs opacity-90 mb-3 leading-snug">Un nuevo capítulo de esta intensa saga de acción y suspense</p>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir al carrito</button>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
+                        <p class="text-xs opacity-90 mb-3 leading-snug">Un nuevo capítulo de esta intensa saga de acción
+                            y suspense</p>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir
+                            al carrito</button>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
                     </div>
                     <div class="bg-s-400 py-3 text-center font-bold text-lg">8,50€</div>
                 </article>
 
-                <!-- Tarjeta 11 — Nuevo -->
-                <article class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
-                    <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-3 py-1 rounded-full z-10">Nuevo</span>
+                <article
+                    class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
+                    <span
+                        class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-3 py-1 rounded-full z-10">Nuevo</span>
                     <div class="bg-n-600 h-48 flex items-center justify-center p-2">
-                        <img src="img/spider-man.jpg" alt="Amazing Spider-Man" class="h-full w-full object-contain drop-shadow-md">
+                        <img src="img/spider-man.jpg" alt="Amazing Spider-Man"
+                            class="h-full w-full object-contain drop-shadow-md">
                     </div>
                     <div class="p-4 flex-grow flex flex-col justify-between">
                         <h3 class="font-bold text-sm mb-1">Amazing Spider-Man</h3>
-                        <p class="text-xs opacity-90 mb-3 leading-snug">Amazing Spider-Man #43 es un número lleno de acción dentro de la colección</p>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir al carrito</button>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
+                        <p class="text-xs opacity-90 mb-3 leading-snug">Amazing Spider-Man #43 es un número lleno de
+                            acción dentro de la colección</p>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir
+                            al carrito</button>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
                     </div>
                     <div class="bg-s-400 py-3 text-center font-bold text-lg">7,99€</div>
                 </article>
 
-                <!-- Tarjeta 12 — Oferta -->
-                <article class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
-                    <span class="absolute top-2 left-2 bg-red-700 text-white text-xs px-3 py-1 rounded-full z-10">Oferta</span>
+                <article
+                    class="bg-p-700 rounded-2xl overflow-hidden flex flex-col text-white w-full max-w-[240px] relative shadow-md">
+                    <span
+                        class="absolute top-2 left-2 bg-red-700 text-white text-xs px-3 py-1 rounded-full z-10">Oferta</span>
                     <div class="bg-n-600 h-48 flex items-center justify-center p-2">
-                        <img src="img/los-juegos-del-hambre.jpg" alt="Los juegos del hambre" class="h-full w-full object-contain drop-shadow-md">
+                        <img src="img/los-juegos-del-hambre.jpg" alt="Los juegos del hambre"
+                            class="h-full w-full object-contain drop-shadow-md">
                     </div>
                     <div class="p-4 flex-grow flex flex-col justify-between">
                         <h3 class="font-bold text-sm mb-1">Los juegos del hambre</h3>
-                        <p class="text-xs opacity-90 mb-3 leading-snug">Una saga de acción que narra la lucha por la supervivencia en un mundo distópico</p>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir al carrito</button>
-                        <button class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
+                        <p class="text-xs opacity-90 mb-3 leading-snug">Una saga de acción que narra la lucha por la
+                            supervivencia en un mundo distópico</p>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Añadir
+                            al carrito</button>
+                        <button
+                            class="w-full bg-s-400 text-white py-2 rounded font-bold text-sm mb-1.5 hover:brightness-110 transition cursor-pointer">Comprar</button>
                     </div>
                     <div class="bg-s-400 py-3 text-center font-bold text-lg">9,49€</div>
                 </article>
@@ -274,7 +354,6 @@
     <!-- ==================== FOOTER ==================== -->
     <footer class="px-6 py-10 md:px-12 border-t border-p-900">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left max-w-7xl mx-auto">
-            <!-- Columna 1: Enlaces de interés -->
             <div>
                 <h4 class="font-bold text-p-900 mb-4">Casa Roble</h4>
                 <p class="text-sm text-[#4a6c6d] mb-2 cursor-pointer hover:underline">Quienes Somos</p>
@@ -285,7 +364,6 @@
                 <p class="text-sm text-[#4a6c6d] mb-2 cursor-pointer hover:underline">Casa Roble Colombia</p>
                 <p class="text-sm text-[#4a6c6d] cursor-pointer hover:underline">Casa Roble Argentina</p>
             </div>
-            <!-- Columna 2: Copyright / Servicios -->
             <div class="flex flex-col items-center justify-center">
                 <h4 class="font-bold text-p-900 mb-4">Servicios</h4>
                 <p class="text-sm text-[#4a6c6d] mb-2 cursor-pointer hover:underline">Casa Roble Plus</p>
@@ -294,16 +372,21 @@
                 <p class="text-sm text-[#4a6c6d] mb-2 cursor-pointer hover:underline">Preventa</p>
                 <p class="text-sm text-[#4a6c6d] cursor-pointer hover:underline">Programa afiliados</p>
             </div>
-            <!-- Columna 3: Redes sociales -->
             <div>
                 <h4 class="font-bold text-p-900 mb-4">Síguenos</h4>
                 <div class="flex gap-3 justify-center md:justify-start flex-wrap">
-                    <img src="img/fb.png" alt="Facebook" class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
-                    <img src="img/x.png" alt="X" class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
-                    <img src="img/ig.png" alt="Instagram" class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
-                    <img src="img/pt.png" alt="Pinterest" class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
-                    <img src="img/sp.png" alt="Spotify" class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
-                    <img src="img/yt.png" alt="YouTube" class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
+                    <img src="img/fb.png" alt="Facebook"
+                        class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
+                    <img src="img/x.png" alt="X"
+                        class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
+                    <img src="img/ig.png" alt="Instagram"
+                        class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
+                    <img src="img/pt.png" alt="Pinterest"
+                        class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
+                    <img src="img/sp.png" alt="Spotify"
+                        class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
+                    <img src="img/yt.png" alt="YouTube"
+                        class="w-10 h-10 rounded-full cursor-pointer hover:opacity-80 transition-opacity">
                 </div>
             </div>
         </div>
@@ -312,4 +395,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
